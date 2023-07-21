@@ -25,7 +25,7 @@ form.addEventListener("submit", (event) => {
   let result;
 
   // --v-- write your code here --v--
-  const formData = new FormData(event.target);
+  /* const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
   const numberA = Number.parseInt(data.numberA, 10);
@@ -39,8 +39,10 @@ form.addEventListener("submit", (event) => {
     result = multiply(numberA, numberB);
   } else if (data.operator === "divide") {
     result = divide(numberA, numberB);
-  }
+  } */
   // --^-- write your code here --^--
 
   resultOutput.textContent = result;
 });
+
+console.log("hello");
