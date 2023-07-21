@@ -3,7 +3,7 @@ console.clear();
 const toastContainer = document.querySelector('[data-js="toast-container"]');
 const addButton = document.querySelector('[data-js="add-button"]');
 const clearButton = document.querySelector('[data-js="clear-button"]');
-//const liItems = document.querySelector('[]')
+
 addButton.addEventListener("click", () => {
   // Exercise: Append a new entry to the toast messages container
   const newMessage = document.createElement("li");
