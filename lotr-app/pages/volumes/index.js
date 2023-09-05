@@ -14,7 +14,6 @@ export default function Volumes() {
       <ul>
         <li>
           <Link href="volumes/the-fellowship-of-the-rings">
-            {slug.title}
             The Fellowship of the Ring
           </Link>
         </li>

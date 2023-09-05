@@ -1,5 +1,6 @@
 import { volumes } from "@/lib/data";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function TheTwoTowers() {
   const slug = volumes.find(({ slug }) => slug === "the-two-towers");
@@ -17,7 +18,19 @@ export default function TheTwoTowers() {
           );
         })}
       </ul>
+      <Image
+        src={slug.cover}
+        alt="Cover of The Two Towers"
+        width={140}
+        height={230}
+      ></Image>
       <Link href="../volumes">All Volumes</Link>
+      <p>
+        <Link href="../volumes/the-fellowship-of-the-rings">previous</Link>
+      </p>
+      <p>
+        <Link href="../volumes/the-return-of-the-king">next</Link>
+      </p>
     </>
   );
 }
